@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Settings:
-    anthropic_api_key: str = os.getenv("ANTHROPIC_API_KEY", "")
+    GEMINI_API_KEY: str  = os.getenv("GEMINI_API_KEY", "")
     llm_model: str = os.getenv("LLM_MODEL", "claude-sonnet-4-5")
 
     embedding_model: str = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
